@@ -1,0 +1,45 @@
+project:
+  type: book
+  output-dir: docs
+
+
+
+book:
+  title: "Introduction to `pyspark`"
+  author: "Pedro Duarte Faria"
+  date: "today"
+  navbar: 
+    background: "#164e80"
+    left: 
+      - text: "Visit the author's blog"
+        href: "https://pedro-faria.netlify.app/"
+    right: 
+      - icon: github
+        href: "https://github.com/pedropark99/Introd-pyspark"
+  edition: "First edition"
+  cover-image: "Cover/cover1.png"
+  chapters:
+    - index.qmd
+    - Chapters/01-intro.qmd
+    - Chapters/02-python.qmd
+    - Chapters/03-spark.qmd
+    - Chapters/04-dataframes.qmd
+    - Chapters/04-columns.qmd
+    - Chapters/05-transforming.qmd
+    - Chapters/07-import.qmd
+    - Chapters/06-dataframes-sql.qmd
+    - Chapters/references.qmd
+  appendices:
+    - Chapters/00-terminal.qmd
+    - Chapters/00-install-spark.qmd
+
+bibliography: references.bib
+number-sections: true
+format:
+  html:
+    theme: 
+      - cosmo
+      - theme.scss
+  # pdf:
+  #   keep-tex: true
+
